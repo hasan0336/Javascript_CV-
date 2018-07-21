@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<title id="title_name"></title>
+</head>
+<body>
+	<div align="center">
+		<h1 id="candidate_name" style="margin: 0px"></h1>
+		<h5 id="address" style="margin: 0px"></h5>
+		<h5 id="contact" style="margin: 0px"></h5>
+	</div>
+	<hr>
+	<div>
+		<h2 id="professional" style="margin: 0px;"></h2>
+		<h5 id="summary" style="padding-left: 10%; margin: 0px;"></h5>
+	</div>
+	<hr>
+	<div>
+		<h2 id="education"></h2>
+		<div style="float: left; width: 90%;">
+			<p id="year" style="display: inline;"></p>
+			<p id="year_degree" style="margin: 0; display: inline; padding:100px;"></p>
+			<p id="year_institute" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p><br>
+		</div>
+		
+		<div style="float: left; width: 90%;">
+			<p id="year2" style="display: inline;"></p>
+			<p id="year_degree2" style="margin: 0; display: inline; padding:100px;"></p>
+			<p id="year_institute2" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p><br>
+		</div>
+		
+		<div style="float: left; width: 90%;">
+			<p id="year3" style="display: inline;"></p>
+			<p id="year_degree3" style="margin: 0; display: inline; padding:100px;"></p>
+			<p id="year_institute3" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+		</div>
+	</div>
+	<hr style="width: 100%;">
+	<div>
+		<h2 id="work_history"></h2>
+		<div style="float: left; width: 90%;">
+		<u> <p id="month_year" style="display: inline;"></p> </u>
+		<p id="designation" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+		<p id="locations" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+		<p id="tasks" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p><br>
+		</div>
+
+		<div style="float: left; width: 90%;">
+			<u> <p id="month_year2" style="display: inline;"></p> </u>
+			<p id="designation2" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+			<p id="locations2" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+			<p id="tasks2" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p><br>
+		</div>
+
+		<div style="float: left; width: 90%;">
+			<u> <p id="month_year3" style="display: inline;"></p> </u>
+			<p id="designation3" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+			<p id="locations3" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+			<p id="tasks3" style="margin: 0; padding:10px; margin-left: 125px; line-height: 0px;"></p>
+		</div>
+	</div>
+	<hr style="width: 100%">
+		<div>
+			<h2 id="skills"></h2>
+			<div style="float: left; width: 90%; position: absolute; left: 150px; ">
+				<p id="back_end"></p>
+				<p id="front_end"></p>
+				<p id="framework"></p>
+				<p id="dmt"></p>
+				<p id="db"></p>
+				<p id="os"></p>
+				<p id="text_editor"></p>
+				<p id="grapics"></p>
+				<p id="ms_office"></p>
+				<p id="rmt"></p>
+			</div>
+		</div>
+</body>
+</html>
+<script type="text/javascript">
+
+	var name = "Syed Hasan Mehid Naqvi";
+	var address = "B-116, Block -11, F.B.Area, Karachi, karachi, sindh 75950";
+	var contact = "Cell: 0333-3200772 - shmn03333@gmail.com";
+	var professional = "Professional Summary";
+	var summary = "An opportunity to work with a well-respected firm where I will be able to provide the company with the benefit of my knowledge and skills while learning the standard operating procedures";
+	var education = "Education";
+	var year = "2017";
+	var year_degree = "<b>Degree</b>: BS.Computer Science";
+	var year_institute =  "<b>Institute</b>: SSUET - Karachi, Sindh";
+	var year2 = "2011";
+	var year_degree2 = "<b>Degree</b>: A Level's, Pre- Engineering";
+	var year_institute2 =  "<b>Institute</b>: Private - Karachi, Sindh, Pakistan";
+	var year3 = "2009";
+	var year_degree3 = "<b>Degree</b>: O level’s, Pre-Engineering";
+	var year_institute3 =  "<b>Institute</b>: Tungsten School Of Excellence - Karachi, Sindh, Pakistan";
+	var work_history = "Work History";
+	var month_year = "SEP/2017 to Current";
+	var designation = "<b>Designation</b>: Web Developer";
+	var locations = "<b>Location</b>: AIMVIZ - KARACHI, SINDH";
+	var tasks = "<b>Task</b>: Working as a Laravel Developer.";
+	var month_year2 = "MAR/2017 to JUL/2017";
+	var designation2 = "<b>Designation</b>: Teacher";
+	var locations2 = "<b>Location</b>: APTECH - KARACHI, SINDH";
+	var tasks2 = "<b>Task</b>: I joined here as a teacher of PHP and C-sharp.";
+	var month_year3 = "JUN/2014 to JUL/2014";
+	var designation3 = "<b>Designation</b>: Asp.Net Intern";
+	var locations3 = "<b>Location</b>: FOURGEN INFORMATION SYSTEMS - KARACHI, SINDH";
+	var tasks3 = "<b>Task</b>: I was hire as an intern, where I learned functionalities of asp.net.";
+	var skills = "<b>Skills</b>";
+	var back_end = "<b>Backend Languages</b>: C++, C#, Asp.net, Ruby, PHP.";
+	var front_end = "<b>Frontend Languages</b>: HTML, CSS.";
+	var framework = "<b>Frameworks</b>: Rails, Laravel, Codeigniter, Visual Studio.";
+	var dmt = "<b>Dependency Manager Tool</b>: Composer.";
+	var db = "<b>DataBases</b>: SQL, Sqlite, MySQL, Postgresql.";
+	var os = "<b>Operating Systems</b>: Ubuntu. Windows, Linux.";
+	var text_editor = "<b>Text Editors</b>: Sublime Text, Notepad.";
+	var grapics = "<b>Graphics</b>: Adobe Photoshop. Adobe Flash.";
+	var ms_office = "<b>Ms Office</b>: MS Word, MS Excel, MS PowerPoint, MS Project Management.";
+	var rmt = "<b>Repository Manager Tool</b>: Github.";
+	$( document ).ready(function() {
+   	document.getElementById("candidate_name").innerHTML = name;
+   	document.getElementById("title_name").innerHTML = name;
+   	document.getElementById("address").innerHTML = address;
+   	document.getElementById("contact").innerHTML = contact;
+   	document.getElementById("professional").innerHTML = professional;
+   	document.getElementById("summary").innerHTML = summary;
+   	document.getElementById("education").innerHTML = education;
+   	document.getElementById("year").innerHTML = year;
+   	document.getElementById("year_degree").innerHTML = year_degree;
+   	document.getElementById("year_institute").innerHTML = year_institute;
+   	document.getElementById("year2").innerHTML = year2;
+   	document.getElementById("year_degree2").innerHTML = year_degree2;
+	document.getElementById("year_institute2").innerHTML = year_institute2;
+	document.getElementById("year3").innerHTML = year3;
+   	document.getElementById("year_degree3").innerHTML = year_degree3;
+	document.getElementById("year_institute3").innerHTML = year_institute3;
+	document.getElementById("work_history").innerHTML = work_history;
+	document.getElementById("month_year").innerHTML = month_year;
+	document.getElementById("designation").innerHTML = designation; 
+	document.getElementById("locations").innerHTML = locations;
+	document.getElementById("tasks").innerHTML = tasks;
+	document.getElementById("month_year2").innerHTML = month_year2;
+	document.getElementById("designation2").innerHTML = designation2; 
+	document.getElementById("locations2").innerHTML = locations2;
+	document.getElementById("tasks2").innerHTML = tasks2;
+	document.getElementById("month_year3").innerHTML = month_year3;
+	document.getElementById("designation3").innerHTML = designation3; 
+	document.getElementById("locations3").innerHTML = locations3;
+	document.getElementById("tasks3").innerHTML = tasks3;    
+	document.getElementById("skills").innerHTML = skills;
+	document.getElementById("back_end").innerHTML = back_end;
+	document.getElementById("front_end").innerHTML = front_end;
+	document.getElementById("framework").innerHTML = framework;
+	document.getElementById("dmt").innerHTML = dmt;
+	document.getElementById("db").innerHTML = db;
+	document.getElementById("os").innerHTML = os;
+	document.getElementById("text_editor").innerHTML = text_editor;
+	document.getElementById("grapics").innerHTML = grapics;
+	document.getElementById("ms_office").innerHTML = ms_office;
+	document.getElementById("rmt").innerHTML = rmt; 	
+});
+</script>
