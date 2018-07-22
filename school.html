@@ -1,0 +1,105 @@
+<h1 align="center"> School Management System </h1>
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+	<title id="title_name"></title>
+</head>
+<body>
+    <div id="details">
+        <h2>Student Details</h2>
+        <p id="name"></p>
+        <p id="f_name"></p>
+        <p id="s_class"></p>
+        <p id="last_class"></p>
+        <p id="l_p_m"></p>
+        <p id="r_no"></p>
+    </div>
+    <hr>
+    <div>
+        <h2>Admission Information</h2>
+        <p id="admission_fees"></p>
+        <p id="monthly_fees"></p>
+        <p id="extracirculum_fees"></p>
+        <p id="game_fees"></p>
+    </div>
+    <hr>
+    <div>
+        <h2>Marks Obtain</h2>
+        <div>
+            <tr>
+                <th>Subjects</th>
+                <th>Marks</th>
+                <th>Status</th>
+            </tr>
+            <table>
+                <tr>
+                    <td>English</td>
+                    <td id="eng_marks"></td>
+                    <td id="eng_status"></td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td id="phy_marks"></td>
+                    <td id="phy_status"></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var name = "<b>Name</b>:Syed Hasan Mehdi Naqvi";
+    var f_name = "<b>Father Name</b>:Baseer Haider Naqvi";
+    var s_class = "<b>Student Class</b>:VIII";
+    var last_class = "<b>Last Class</b>:VII";
+    var l_p_m = "<b>Last Passing Marks</b>:70";
+    var r_no = "<b>Roll Number</b>:203";
+    var admission_fees = "<b>Admission Fees</b>:1000rs";
+    var monthly_fees = "<b>Monthly Fees</b>:200rs";
+    var extracirculum_fees = "<b>Extracirculum Fees</b>: 100rs";
+    var game_fees = "<b>Game Fees</b>: 50rs";
+    var total_marks = 100;
+    var eng_marks = 49;
+    var phy_marks = 90;
+    $(document).ready(function(){
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("f_name").innerHTML = f_name;
+        document.getElementById("s_class").innerHTML = s_class;
+        document.getElementById("last_class").innerHTML = last_class;
+        document.getElementById("l_p_m").innerHTML = l_p_m;
+        document.getElementById("r_no").innerHTML = r_no;
+        document.getElementById("admission_fees").innerHTML = admission_fees;
+        document.getElementById("monthly_fees").innerHTML = monthly_fees;
+        document.getElementById("extracirculum_fees").innerHTML = extracirculum_fees;
+        document.getElementById("game_fees").innerHTML = game_fees;
+        document.getElementById("eng_marks").innerHTML = eng_marks;
+        document.getElementById("phy_marks").innerHTML = phy_marks;
+        if(eng_marks < 50)
+        {
+            var eng_status = "fail";
+            document.getElementById("eng_status").innerHTML = eng_status;
+        }
+        else if(eng_marks >= 50)
+        {
+            var eng_status = "pass";
+            document.getElementById("eng_status").innerHTML = eng_status;
+        }
+
+        if(phy_marks < 50)
+        {
+            var phy_status = "fail";
+            document.getElementById("phy_status").innerHTML = phy_status;
+        }
+        else if(phy_marks > 50)
+        {
+            var phy_status = "pass";
+            document.getElementById("phy_status").innerHTML = phy_status;
+        }
+    });
+</script>
