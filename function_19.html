@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<!--  Write a JavaScript function that checks whether a passed
+string is palindrome or not? A palindrome is word, phrase, or
+sequence that reads the same backward as forward, e.g., madam.   --> 
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function reverse(n) {
+			var abc;
+			n = n.toString();
+		    for(var r = n.length; r >= 0; r--)
+		    {	
+		    	if(!abc){
+		    		abc = n[r];
+		    	}
+		    	else{
+		    		abc += n[r];
+		    	}
+		    }
+		    if(abc == n)
+		    {
+		    	console.log("palindrome")
+		    }
+		    else
+		    {
+		    	console.log("not palindrome");
+		    }
+
+		    	console.log(abc)
+    		// console.log(r);
+		}
+		reverse("civic");
+
+	</script>
+
+</body>
+</html>

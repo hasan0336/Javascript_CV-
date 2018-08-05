@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<!-- The Age Calculator
+Forgot how old you are? Calculate it!
+Write a function named calculateAge that:
+o takes 2 arguments: birth year, current year.
+o calculates the 2 possible ages based on those years.
+o outputs the result to the screen like so: "You are either NN or
+NN"
+Call the function three times with different sets of values.
+Bonus: Figure out how to get the current year in JavaScript
+instead of passing it in. --> 
+</head>
+<body>
+	<script type="text/javascript">
+		
+        function age(year_born,current_year) 
+        {
+            
+            var age =  current_year - year_born;
+            console.log(age);
+        }
+        age(1992,(new Date()).getFullYear());
+        age(1947,(new Date()).getFullYear());
+        age(1957,(new Date()).getFullYear());
+        //console.log(char_count("aaaabbbbccccccaa", 'a'));
+	</script>
+
+</body>
+</html>

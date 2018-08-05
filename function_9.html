@@ -1,0 +1,41 @@
+<!-- Write a nested function that computes hypotenuse of a right angle triangle. Hypotenuse2 = Base2 + Perpendicular2 Take base and perpendicular as inputs. Outer function : calculateHypotenuse() Inner function: calculateSquare() -->
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+            <title>
+
+            </title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        var a;
+        var b;
+        var h;
+        function base(a)
+        {
+            a = a * a;
+            return a;
+        }
+    
+        function perpendicular(b)
+        {
+            b = b * b;
+            return b;
+        }
+        
+        function hypotenuse()
+        {
+            var ba = base(4);
+            var pe = perpendicular(5);
+            console.log(ba);
+            h = ba + pe;
+            h = Math.sqrt(h);
+            console.log(h);
+        }
+        hypotenuse();
+        // perpendicular(4);
+
+    </script>
+</html>
